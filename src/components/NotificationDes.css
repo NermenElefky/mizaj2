@@ -1,0 +1,38 @@
+.notificationContainer {
+  margin-top: 30px;
+}
+.notification-wrapper {
+  background: #ffffff82;
+  padding: 12px 15px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  width: 100%;
+  max-width: 700px;
+}
+.notification-wrapper.new {
+  background: var(--hover-color);
+}
+.notification-wrapper .main-text {
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.notification-wrapper .submain-text {
+  margin-left: 4px;
+  font-size: 16.25px;
+}
+.main-text,
+.submain-text {
+  display: inline-block;
+}
+.notification-wrapper .time {
+  margin-top: 4px;
+  font-size: 16.25px;
+  color: #777;
+}
+.earlier {
+  color: var(--blue-color);
+  margin: 10px;
+  letter-spacing: 0.8px;
+}

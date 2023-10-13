@@ -1,0 +1,123 @@
+.orderDishWrapper {
+  width: 272.5px;
+  background: #fff;
+  padding: 22px 13px;
+  border-radius: 5px;
+  margin: 8px;
+  position: relative;
+}
+.dish-info {
+  display: flex;
+  align-items: center;
+}
+.dish-img img {
+  width: 75px;
+  height: 75px;
+  border-radius: 9px;
+}
+.dish-text {
+  text-align: center;
+  padding: 13px 0px;
+  display: inline-block;
+  margin-left: 15px;
+}
+.dish-text p {
+  font-size: 18.75px;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  color: var(--blue-color);
+}
+.dish-options {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 15px;
+  justify-content: space-between;
+}
+.select-container {
+  width: 155px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.arrow {
+  position: absolute;
+  top: 53%;
+  right: 8px;
+  display: none;
+}
+.arrow svg {
+  font-size: 13.75px;
+  color: var(--blue-color);
+}
+.select-label,
+.price-label {
+  text-transform: capitalize;
+  font-size: 17.5px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.select {
+  width: 100%;
+  appearance: none;
+  padding: 6px 8px;
+  border: none;
+  background: var(--hover-color);
+  overflow: hidden;
+}
+.select option {
+  padding: 5px;
+  font-size: 17px;
+}
+.select option:checked {
+  background-color: var(--pink-color);
+  color: #fff;
+}
+.select option:hover {
+  background-color: #1e90ff85;
+  cursor: pointer;
+}
+.qty-container {
+  display: inline-block;
+  min-width: 50px;
+  width: 10%;
+  max-width: 62.5px;
+}
+.qty {
+  text-transform: uppercase;
+  font-size: 16.25px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  margin-bottom: 5px;
+  display: block;
+}
+#qty {
+  width: 100%;
+  border: 1px solid var(--blue-color);
+  text-align: center;
+  padding: 3px;
+  border-radius: 2px;
+  font-size: 17px;
+}
+.price-amount {
+  font-size: 14px;
+  letter-spacing: 0.6px;
+}
+.price-amount span {
+  display: block;
+  text-align: right;
+  font-weight: 500;
+  font-size: 20px;
+}
+.price-amount svg {
+  color: var(--pink-color);
+  font-size: 16.25px;
+}
+.delete-order {
+  position: absolute;
+  top: 12px;
+  right: 11px;
+  background: transparent;
+}
+.delete-order svg {
+  color: var(--pink-color);
+  font-size: 20px;
+}

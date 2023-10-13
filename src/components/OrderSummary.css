@@ -1,0 +1,66 @@
+.Ordersummary {
+  background: #fff;
+  border-radius: 3px;
+  padding: 16px 12px;
+  max-width: 312.5px;
+  width: 99%;
+}
+.cancel button {
+  margin-left: 75%;
+  background: red;
+  color: #fff;
+  padding: 4px 7px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  border: 1px solid red;
+  transition: 0.5s;
+  font-size: 16px;
+}
+.cancel button:hover {
+  color: red;
+  background: #fff;
+}
+.about-order p {
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+.about-order span {
+  text-transform: capitalize;
+  color: var(--blue-color);
+  margin-right: 4px;
+  font-size: 16.5px;
+}
+.about-order span.status.completed {
+  color: green;
+}
+.about-order span.status.cancelled {
+  color: red;
+}
+button.details {
+  background: none;
+  margin-left: 80%;
+  text-transform: capitalize;
+  text-decoration: underline;
+  color: var(--blue-color);
+  font-size: 15px;
+}
+button.details:hover {
+  color: var(--pink-color);
+}
+.order-details {
+  margin-top: 11px;
+  width: 100%;
+}
+tr {
+  height: 20px;
+}
+th {
+  font-size: 13.5px;
+  text-align: center;
+  width: calc(100% / 3);
+}
+td {
+  text-align: center;
+  font-size: 16px;
+  width: calc(100% / 3);
+}
