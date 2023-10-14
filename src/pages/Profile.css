@@ -1,0 +1,250 @@
+.profile-container {
+  margin-top: 20px;
+}
+.profile-header {
+  background-image: url("../assests/profile-bg.jpg");
+  height: 200px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 31px;
+}
+.profile-header-info {
+  display: flex;
+  align-items: center;
+}
+.profile-header img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.profileImageParent {
+  position: relative;
+  margin-right: 26px;
+}
+.profileImageParent .input-file-container {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  overflow: hidden;
+  bottom: 2px;
+  right: 0px;
+}
+.profileImageParent input {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  opacity: 0;
+  cursor: pointer;
+  background: red;
+  width: 150px;
+}
+.editIcon {
+  position: absolute;
+  bottom: 2px;
+  right: 0px;
+  color: #fff;
+  background: var(--pink-color);
+  border-radius: 50%;
+  padding: 4px;
+  width: 25px;
+  height: 25px;
+}
+.profile-header p {
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 23px;
+}
+.profile-content {
+  margin-top: 30px;
+  display: flex;
+  align-items: start;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.personal,
+.private {
+  padding-top: 20px;
+  background: #1e90ff4a;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-right: 30px;
+  width: 256.25px;
+  flex-shrink: 0;
+  margin-bottom: 20px;
+}
+.private {
+  background-color: #fa4dc885;
+}
+
+.personal h3,
+.private h3 {
+  text-transform: capitalize;
+  padding: 6px 20px;
+  font-size: 22px;
+}
+.personal form,
+.private form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 15px 20px;
+  background-color: #fff;
+}
+.personal label,
+.private label {
+  font-size: 15px;
+  margin-bottom: 7px;
+  font-weight: 500;
+}
+.personal input,
+.private input {
+  background: transparent;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #777;
+  padding-bottom: 5px;
+  font-size: 16px;
+  width: 100%;
+}
+.personal .inputName {
+  margin-bottom: 8px;
+}
+.personal textarea {
+  background: transparent;
+  resize: none;
+  border: none;
+  border-bottom: 1px solid #777;
+  height: 50px;
+  font-size: 16px;
+}
+textarea:focus {
+  outline: none;
+}
+.profile-email {
+  font-size: 13.75px;
+  pointer-events: none;
+}
+.change-password {
+  position: absolute;
+  top: 19px;
+  right: 0px;
+  font-size: 12.5px;
+  padding: 4px;
+  background: var(--blue-color);
+  color: #fff;
+  border-radius: 4px;
+}
+.password-label {
+  position: relative;
+}
+.private #password {
+  pointer-events: none;
+}
+.phone-btn {
+  width: 25px;
+  padding: 4px;
+  height: 25px;
+  border-radius: 2px;
+  color: #fff;
+  display: inline-grid;
+  place-items: center;
+}
+.increase {
+  background: #ce93d8;
+  margin-right: 5px;
+}
+.decrease {
+  background: darkgray;
+}
+.phone-container {
+  position: relative;
+}
+.btns-container {
+  position: absolute;
+  top: -7px;
+  right: 0;
+}
+.profile-more {
+  background: #1e90ff4a;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 7px;
+}
+.profile-more div {
+  background: #fff;
+  padding: 14px;
+  border-radius: 6px;
+  display: grid;
+  place-items: center;
+  width: 125px;
+  margin: 10px;
+}
+.profile-more h4 {
+  margin-bottom: 4px;
+  text-transform: capitalize;
+  font-size: 19px;
+}
+.profile-more p {
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.saveChanges {
+  padding: 6px;
+  width: fit-content;
+  font-size: 12px;
+  background: var(--blue-color);
+  color: #fff;
+  border-radius: 3px;
+  align-self: end;
+  margin-bottom: 10px;
+}
+.save-private {
+  background: var(--pink-color);
+}
+button:disabled {
+  opacity: 0.3;
+  cursor: auto;
+}
+.phone-container:has(.errorMessage) input {
+  margin-bottom: 5px;
+}
+.errorMessage {
+  text-align: end;
+  font-size: 10px;
+  text-transform: none;
+  color: red;
+  margin-bottom: 15px;
+}
+@media (max-width: 760px) {
+  .private {
+    margin-right: 0;
+  }
+  .profile-content {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 684px) {
+  .personal {
+    margin-right: 0;
+  }
+  .profile-content {
+    justify-content: space-around;
+  }
+}
+@media (max-width: 500px) {
+  .profile-header img {
+    width: 75px;
+    height: 75px;
+  }
+  .profile-header p {
+    font-size: 19px;
+  }
+}
